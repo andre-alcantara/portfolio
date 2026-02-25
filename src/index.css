@@ -1,0 +1,97 @@
+/* index.css */
+@import './fonts.css';
+
+:root {
+  --bg: #faf9ed;
+  --text: #0f172a;
+}
+
+html, body, #root {
+  height: 100%;
+  width: stretch;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  text-align: center;
+}
+
+/* Layout styles matching Figma two-column design */
+.app-layout {
+  height: 100vh;
+  display: flex;
+  gap: 16px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.col {
+  flex: 1 1 0%;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.col-left {
+  background: #bc4132;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  color: rgba(0,0,0,0.85);
+}
+
+.corner-label {
+  font-size: 20px;
+}
+
+.corner-foot {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.col-right {
+  background: #faf9ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.meta {
+  font-size: 20px;
+}
+
+.hero p {
+  font-family: 'PPEditorialSans', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 6vw, 40px);
+  letter-spacing: -3%;
+  line-height: 1.3;
+  color: #2a1510;
+  max-width: 800px;
+  margin: 0;
+}
+
+.muted {
+  font-family: 'PPEditorialSans', serif;
+  color: rgba(28,10,8,0.5);
+  font-weight: 500;
+}
+
+@media (max-width: 880px) {
+  .app-layout { flex-direction: column; height: auto; }
+  .col { width: 100%; }
+  .hero p { font-size: 28px; }
+}

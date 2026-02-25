@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-Thin.woff2') format('woff2');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-UltralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-Heavy.woff2') format('woff2');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-HeavyItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-Ultrabold.woff2') format('woff2');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'PPEditorialSans';
+  src: url('public/fonts/PPEditorialSans-UltraboldItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
