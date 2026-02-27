@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
+function getSaoPauloTime() {
+  return new Date().toLocaleTimeString('en-GB', {
+    timeZone: 'America/Sao_Paulo',
+    hour12: false,
+  })
+}
 
 export default function App() {
+  const [time, setTime] = useState(getSaoPauloTime)
+
+  useEffect(() => {
+    const id = setInterval(() => setTime(getSaoPauloTime()), 1000)
+    return () => clearInterval(id)
+  }, [])
+
   return (
       <div className="app-layout">
         <aside className="col col-left">
@@ -22,8 +36,8 @@ export default function App() {
               <span> and </span>
               <span className="muted">MRV</span>
               <span>, bringing clarity to complex problems with intentional decisions and attention to </span>
-              <span className="muted">craft</span>
-              <span>. Currently at </span>
+              <span className="muted">craft</span>.<br />
+              <span>Currently at </span>
               <span className="muted">Mercado Livre</span>
               <span>.</span>
             </p>
@@ -31,7 +45,7 @@ export default function App() {
           <div className="hour">
             <span>São Paulo</span>
             <span>–</span>
-            <span>19:28:35</span>
+            <span>{time}</span>
           </div>
         </main>
       </div>

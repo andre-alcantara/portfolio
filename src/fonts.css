@@ -1,18 +1,18 @@
 /* Hero */
 @font-face {
   font-family: 'PPEditorialSans';
-  src: url('public/fonts/PPEditorialSans-Medium.woff2') format('woff2');
+  src: url('/fonts/PPEditorialSans-Medium.woff2') format('woff2');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('public/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
+  src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('public/fonts/PPNeueMontreal-Medium.woff2') format('woff2');
+  src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2');
   font-weight: 500;
 }
