@@ -4,12 +4,15 @@ export default function App() {
   return (
       <div className="app-layout">
         <aside className="col col-left">
-          <div className="corner-label">Design, Mercado Livre</div>
-          <div className="corner-foot">New website in dev...</div>
+          <div className="corner-label">André Alcantara</div>
+          <div className="corner-foot">Feel free to reach out</div>
         </aside>
 
         <main className="col col-right">
-          <div className="meta">São Paulo — 19:28:35</div>
+          <div className="top">
+            <span>Design @ Mercado Livre</span>
+            <span>Linkedin</span>
+          </div>
           <article className="hero">
             <p>
               <span>I'm André Alcantara, a brazilian designer based in São Paulo, over the past 5 years, I've had the privilege of working with brands like </span>
@@ -25,7 +28,11 @@ export default function App() {
               <span>.</span>
             </p>
           </article>
-          <div className="meta">São Paulo — 19:28:35</div>
+          <div className="hour">
+            <span>São Paulo</span>
+            <span>–</span>
+            <span>19:28:35</span>
+          </div>
         </main>
       </div>
     )
