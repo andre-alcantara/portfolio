@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
-function getSaoPauloTime() {
-  return new Date().toLocaleTimeString('en-GB', {
-    timeZone: 'America/Sao_Paulo',
-    hour12: false,
-  })
-}
+import { getSaoPauloTime } from './utils/time'
 
 export default function App() {
   const [time, setTime] = useState(getSaoPauloTime)
