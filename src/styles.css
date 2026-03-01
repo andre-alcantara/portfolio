@@ -1,0 +1,11 @@
+:root {
+    --color-paprika: #BC4132;
+    --color-matcha: #E3CF32;
+    --color-vanilla: #FAF9ED;
+    --color-espresso: #200B09;
+
+    /* Opacity Variants */
+    --color-espresso-50: rgba(32, 11, 9, 0.5);
+    --color-espresso-10: rgba(32, 11, 9, 0.1);
+    --color-matcha-50: rgba(227, 207, 50, 0.5);
+}

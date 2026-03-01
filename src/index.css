@@ -1,9 +1,10 @@
 /* index.css */
 @import './fonts.css';
+@import './styles.css';
 
 :root {
-  --bg: #faf9ed;
-  --text: #0f172a;
+  --bg: var(--color-vanilla);
+  --text: var(--color-espresso);
 }
 
 html, body, #root {
@@ -47,7 +48,7 @@ body {
 }
 
 .col-left {
-  background: #bc4132;
+  background: var(--color-paprika);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,7 +66,7 @@ body {
 }
 
 .col-right {
-  background: #faf9ed;
+  background: var(--color-vanilla);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -92,14 +93,14 @@ body {
   font-size: clamp(26px, 6vw, 48px);
   letter-spacing: -3%;
   line-height: 1.3;
-  color: #2a1510;
+  color: var(--color-espresso);
   max-width: 800px;
   margin: 0;
 }
 
 .muted {
   font-family: 'PPEditorialSans', serif;
-  color: rgba(28,10,8,0.5);
+  color: var(--color-espresso-50);
   font-weight: 500;
 }
 
