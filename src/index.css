@@ -40,7 +40,7 @@ body {
 
 .col {
   flex: 1 1 0%;
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid var(--color-espresso-10);
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 16px;
-  color: rgba(0,0,0,0.85);
+  color: var(--color-espresso);
 }
 
 .corner-label {
@@ -62,7 +62,6 @@ body {
 
 .corner-foot {
   font-size: 20px;
-  opacity: 0.6;
 }
 
 .col-right {
@@ -99,9 +98,14 @@ body {
 }
 
 .muted {
-  font-family: 'PPEditorialSans', serif;
+  text-decoration: none;
   color: var(--color-espresso-50);
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.muted:hover {
+  color: var(--color-paprika);
 }
 
 @media (max-width: 880px) {
