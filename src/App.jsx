@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { getSaoPauloTime } from './utils/time'
+import { getSaoPauloTime, isDaytime } from './utils/time'
+import sunUrl from './assets/sun.svg'
+import moonUrl from './assets/moon.svg'
 
 export default function App() {
   const [time, setTime] = useState(getSaoPauloTime)
+  const [hours, minutes, seconds] = time.split(':')
 
   useEffect(() => {
     const id = setInterval(() => setTime(getSaoPauloTime()), 1000)
@@ -38,8 +41,15 @@ export default function App() {
           </article>
           <div className="hour">
             <a>São Paulo</a>
-            <a>–</a>
-            <a>{time}</a>
+            <img src={isDaytime(time) ? sunUrl : moonUrl} alt="" />
+
+            <div className="time">
+              <a key={hours} className="slide-up">{hours}</a>
+              <span>:</span>
+              <a key={minutes} className="slide-up">{minutes}</a>
+              <span>:</span>
+              <a key={seconds} className="slide-up">{seconds}</a>
+            </div>
           </div>
         </main>
       </div>

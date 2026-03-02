@@ -84,6 +84,7 @@ body {
   display: flex;
   gap: 8px;
   width: 100%;
+  align-items: center;
 }
 
 .hero p {
@@ -97,11 +98,28 @@ body {
   margin: 0;
 }
 
+.slide-up {
+  display: inline-block;
+  animation: slideUp 0.3s ease-out;
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .muted {
   text-decoration: none;
   color: var(--color-espresso-50);
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-out;
 }
 
 .muted:hover {
