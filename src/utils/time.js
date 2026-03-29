@@ -1,10 +1,19 @@
 export function getSaoPauloTime() {
-  const date = new Date().toLocaleString('en-GB', { timeZone: 'America/Sao_Paulo' })
-  const time = new Date(date)
+  const date = new Date()
   
-  const hours = String(time.getHours()).padStart(2, '0')
-  const minutes = String(time.getMinutes()).padStart(2, '0')
-  const seconds = String(time.getSeconds()).padStart(2, '0')
+  const formatter = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'America/Sao_Paulo',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+  })
+
+  const parts = formatter.formatToParts(date)
+  
+  const hours = parts.find(p => p.type === 'hour').value
+  const minutes = parts.find(p => p.type === 'minute').value
+  const seconds = parts.find(p => p.type === 'second').value
   
   return `${hours}:${minutes}:${seconds}`
 }
