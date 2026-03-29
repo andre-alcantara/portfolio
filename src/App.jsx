@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getSaoPauloTime, isDaytime } from './utils/time'
 import sunUrl from './assets/sun.svg'
 import moonUrl from './assets/moon.svg'
+import Card from './components/Card'
 
 export default function App() {
   const [time, setTime] = useState(getSaoPauloTime)
@@ -18,7 +19,7 @@ export default function App() {
         <span className="header-name">André Alcantara</span>
         <div className="header-location">
           <span>São Paulo</span>
-          <img src={isDaytime(time) ? sunUrl : moonUrl} alt="" />
+          <img src={isDaytime(time) ? sunUrl : moonUrl} alt="" className={isDaytime(time) ? 'icon-sun' : 'icon-moon'} />
           <div className="time">
             <span key={`h-${hours}`} className="slide-up">{hours}</span>
             <span>:</span>
@@ -35,13 +36,11 @@ export default function App() {
       </header>
 
       <main className="content-panel">
-        <div className="top">
-          <a>Design @ Mercado Livre</a>
-          <a className="muted" href="https://www.linkedin.com/in/and-alcantara/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        <div className="content-inner">
+
         <article className="hero">
           <p>
-            <a>I'm André Alcantara, a brazilian designer based in São Paulo, over the past 5 years, I've had the privilege of working with brands like </a>
+            <a>Olá! I'm André Alcantara, a brazilian designer based in São Paulo, over the past 5 years, I've had the privilege of working with brands like </a>
             <a className="muted" href="https://www.itau.com.br" target="_blank" rel="noopener noreferrer">Itaú</a>
             <a>, </a>
             <a className="muted" href="https://www.raizen.com.br/" target="_blank" rel="noopener noreferrer">Raízen</a>
@@ -54,6 +53,17 @@ export default function App() {
             <a>.</a>
           </p>
         </article>
+
+        <section className="cards-section">
+          <Card
+            image=""
+            title="Transforming the car buying experience to IPO"
+            description="Joined the company as a founding design team member. After the MVP launch, data showed that users were confused about the new proposition of buying a car entirely online. With a limited number of designers, content and research, we had to identify issues to increase the level of interaction and trust in this new behaviour of shopping for a car online."
+            ctaText="Read case study"
+            ctaHref="#"
+          />
+        </section>
+        </div>
       </main>
     </div>
   )
