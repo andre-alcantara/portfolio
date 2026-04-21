@@ -1,8 +1,9 @@
 /* ─── Fonts ──────────────────────────────────────────────────────────────────── */
+
 @font-face {
   font-family: 'PP Acma';
-  src: url('/fonts/PPAcma-Book.woff2') format('woff2');
-  font-weight: 600;
+  src: url('/fonts/PPAcma-Medium.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -16,24 +17,24 @@
 }
 
 
-/* ─── Color Primitives ─────────────────────────────────────────────────────── */
+/* ─── Primitive Colors ─────────────────────────────────────────────────────── */
 :root {
   --espresso-900: #170b0a;
   --espresso-700: #2e2321;
   --espresso-500: #8b8584;
   --espresso-100: #e8e7e6;
 
-  --vanilla: #faf9ed; 
+  --vanilla-500: #faf9ed; 
   --paprika-500: #db5141;
 }
 
 /* ─── Semantic Tokens ──────────────────────────────────────────────────────── */
 :root {
   /* Colors */
-  --color-background: var(--espresso-900);
-  --color-surface: ;
+  --color-background: var(--vanilla-500);
+  --color-surface: var(--vanilla-500);
   --color-accent: var(--paprika-500);
-  --color-text-primary: var(--vanilla);
+  --color-text-primary: var(--espresso-900);
   --color-text-secondary: var(--espresso-500);
 
   /* Typography */
