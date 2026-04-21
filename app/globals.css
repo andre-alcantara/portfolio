@@ -1,24 +1,64 @@
+/* ─── Fonts ──────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'PP Acma';
+  src: url('/fonts/PPAcma-Book.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ─── Color Primitives ─────────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --espresso-900: #170b0a;
+  --espresso-700: #2e2321;
+  --espresso-500: #8b8584;
+  --espresso-100: #e8e7e6;
+
+  --vanilla: #faf9ed; 
+  --paprika-500: #db5141;
 }
 
-inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Semantic Tokens ──────────────────────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-background: var(--espresso-900);
+  --color-surface: ;
+  --color-accent: var(--paprika-500);
+  --color-text-primary: var(--vanilla);
+  --color-text-secondary: var(--espresso-500);
+
+  /* Typography */
+  --font-display: 'PP Acma', serif;
+  --font-body: 'PP Neue Montreal', sans-serif;
+  --font-size-display: 64px;
+  --font-size-heading: ;
+  --font-size-body: ;
+  --font-size-caption: ;
+
+  /* Spacing — fill in from Figma */
+  --spacing-xs: ;
+  --spacing-sm: ;
+  --spacing-md: ;
+  --spacing-lg: ;
+  --spacing-xl: ;
+
+  /* Border radius — fill in from Figma */
+  --radius-sm: ;
+  --radius-md: ;
+  --radius-lg: ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ─── Base ─────────────────────────────────────────────────────────────────── */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
 }

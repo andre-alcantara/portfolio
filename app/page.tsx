@@ -1,7 +1,9 @@
+import styles from './page.module.css'
+
 export default function Home() {
   return (
     <main>
-      <h1>André Alcantara</h1>
+      <h1 className={styles.title}>André Alcantara</h1>
     </main>
   )
 }
