@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+}
+
+.inner {
+  max-width: 984px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 16px;
+  min-height: 56px; /* matches nav pill height so vertical centering aligns */
+}
+
+.profile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.name {
+  width: 144px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  color: var(--color-text-primary);
+}
+
+.role {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.navFixed {
+  position: fixed;
+  top: 24px;
+  /* aligns with the right edge of the 984px container; falls back to 16px on smaller screens */
+  right: max(16px, calc((100vw - 984px) / 2));
+  z-index: 100;
+}

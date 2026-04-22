@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import styles from './layout.module.css'
-import { Nav } from '@/components/layout/Nav'
+import { Header } from '@/components/layout/Header'
 
 export const metadata: Metadata = {
   title: 'André Alcantara — Portfolio',
@@ -16,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className={styles.header}>
-          <Nav />
-        </header>
+        <Header />
         {children}
       </body>
     </html>
