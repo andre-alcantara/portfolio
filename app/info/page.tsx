@@ -1,3 +1,11 @@
+import { Container } from '@/components/ui/Container'
+
 export default function InfoPage() {
-  return <h1>Info</h1>
+  return (
+    <main>
+      <Container>
+        <h1>Info</h1>
+      </Container>
+    </main>
+  )
 }

@@ -1,3 +1,11 @@
+import { Container } from '@/components/ui/Container'
+
 export default function CraftPage() {
-  return <h1>Craft</h1>
+  return (
+    <main>
+      <Container>
+        <h1>Craft</h1>
+      </Container>
+    </main>
+  )
 }

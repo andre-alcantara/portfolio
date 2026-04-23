@@ -2,4 +2,6 @@
   font-family: var(--font-display);
   font-size: var(--font-size-display);
   color: var(--color-text-primary);
+  letter-spacing: -2px;
+  line-height: 1.2;
 }

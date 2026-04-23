@@ -1,3 +1,11 @@
+import { Container } from '@/components/ui/Container'
+
 export default function WorkPage() {
-  return <h1>Work</h1>
+  return (
+    <main>
+      <Container>
+        <h1>Work</h1>
+      </Container>
+    </main>
+  )
 }
