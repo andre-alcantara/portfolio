@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import styles from './NavItem.module.css'
 import type { NavItemProps } from '@/lib/types'
 
-const MotionLink = motion(Link)
+const MotionLink = motion.create(Link)
 
 const pressTransition = {
   type: 'spring' as const,
