@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.sunPlaceholder {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}

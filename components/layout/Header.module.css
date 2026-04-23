@@ -32,7 +32,7 @@
   font-family: var(--font-body);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1;
   letter-spacing: -0.2px;
   color: var(--color-text-secondary);
   white-space: nowrap;
