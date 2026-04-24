@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { getSaoPauloTime } from '@/utils/time.js'
+import { getSaoPauloTime } from '@/lib/time'
 import styles from './LocationInfo.module.css'
 
 export function LocationInfo() {
